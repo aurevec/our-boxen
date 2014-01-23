@@ -67,10 +67,10 @@ node default {
   }
   ruby::version { '2.1.0': }
 
-  include nodejs::v0_10
+  class { 'nodejs::global': version => 'v0.10.21' }
 
-  nodejs::module { ['yeoman', 'socket.io', 'express', 'cordova']:
-    node_version => 'v0.10'
+  nodejs::module { ['yo', 'socket.io', 'express', 'cordova']:
+    node_version => 'v0.10.21'
   }
 
   include sublime_text_2
@@ -104,7 +104,7 @@ node default {
 #  include sequel_pro
   include redis
   include istatmenus4
-#  include mongodb
+  include mongodb
 
   package {
     [
