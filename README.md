@@ -84,6 +84,9 @@ cd /opt/boxen/repo
 You can also skip the above steps and <a href="#customizing">customize your
 boxen</a> before installing it.
 
+### Imagemagick
+sudo ln -s /opt/boxen/homebrew/bin/mogrify /usr/local/bin/mogrify
+sudo ln -s /opt/boxen/homebrew/bin/identify /usr/local/bin/identify
 
 ### Distributing
 

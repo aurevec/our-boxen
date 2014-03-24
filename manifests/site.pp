@@ -101,10 +101,12 @@ node default {
   include onepassword
   include mou
   include rubymine
-#  include sequel_pro
+  include sequel_pro
   include redis
   include istatmenus4
   include mongodb
+  include mysql
+  mysql::db { 'mydb': }
 
   package {
     [
